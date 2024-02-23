@@ -4,7 +4,7 @@ Karatsuba Multiplication is a multiplication algorithm that works asymtotically 
 
 ## Grade School Complexity
 To put it simply, any "grade school" math will require double loop for every digit of the first operand to multiply with every digit of the second operand.
-This will give us `O(n^2)`
+This will give us O(n<sup>2</sup>) `O(n^2)`
 
 ## Karatsuba Complexity
-With karatsuba multiplication, the complexity is reduced as optimal as `O(n<sup>log<sub>2</sub>(3)</sup>)`
+With karatsuba multiplication, the complexity is reduced as optimal as O(n<sup>log<sub>2</sub>(3)</sup>) `O(n^log2(3))`
