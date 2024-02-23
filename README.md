@@ -7,4 +7,4 @@ To put it simply, any "grade school" math will require double loop for every dig
 This will give us `O(n^2)`
 
 ## Karatsuba Complexity
-With karatsuba multiplication, the complexity is reduced as optimal as `O(n^log2(3))`
+With karatsuba multiplication, the complexity is reduced as optimal as O(n<sup>log<sub>2</sub>(3)</sup>)
