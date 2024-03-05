@@ -27,10 +27,9 @@ public class KaratsubaMult {
     BigInteger[] cAndd = big2.divideAndRemainder(tenToPowerHalfLen);
     BigInteger ac = karatsubaMultiply(aAndb[0], cAndd[0]);
     BigInteger bd = karatsubaMultiply(aAndb[1], cAndd[1]);
-    BigInteger ad = karatsubaMultiply(aAndb[0], cAndd[1]);
-    BigInteger bc = karatsubaMultiply(aAndb[1], cAndd[0]);
+    BigInteger abcd = karatsubaMultiply((aAndb[0].add(aAndb[1])), cAndd[0].add(cAndd[1]));
     
-    return tenToPower(len).multiply(ac).add(tenToPowerHalfLen.multiply(bc.add(ad))).add(bd);
+    return tenToPower(len).multiply(ac).add(tenToPowerHalfLen.multiply(abcd.subtract(ac.add(bd)))).add(bd);
   }
 
   static long measureExecutionTime(Runnable task){
